@@ -13,3 +13,7 @@ sl.title("My first Streamlit app")
 sl.subheader("Introducing Streamlit")
 sl.write("I hope that you enjoyed my Streamlit app")
 sl.write(df)
+sl.line_chart(df)
+sl.area_chart(df)
+my_slider = sl.slider("Celsius")
+sl.write(my_slider,' in Fahrenheit is: ', my_slider * 9/5 + 32
